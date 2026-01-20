@@ -65,8 +65,69 @@
     <span class="carousel-control-next-icon"></span>
   </button>
 </div>
-
+<div class="container mt-3">
+  <h3 style="color:white">Click on the button to open a reminder!</h3>
+  
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    Reminder!
+  </button>
 </div>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Reminder</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+       You are Amazing!
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+<div class="container mt-3">
+  <h3 style="color:white">Hover over the Tooltip for another reminder!</h3>
+  
+  <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="You are my favorite teacher!">
+    Hover over me!
+  </button>
+</div>
+
+<script>
+// Initialize tooltips
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+</script>
+<div class="container mt-3">
+  <h3 style="color:white">Click on the popover for one last reminder!!</h3>
+  
+  <button type="button" class="btn btn-primary" data-bs-toggle="popover" title="Reminder!" data-bs-content="You are the best!">
+    Click on me!
+  </button>
+</div>
+
+<script>
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
+</script>
+
 <h2 style="color:white;">Sanrio Characters</h2>
   <div class="card" style="width:400px">
     <div class="card-body">
@@ -92,8 +153,8 @@
       <p class="card-text">My Sweet Piano is a gentle, pink sheep from Sanrio, best friends with My Melody, known for her soft baby-pink wool, love of meringue cookies, and enjoying flower-picking and playing the piano; she debuted in 1980, communicates through sheep noises in some series but speaks in others, and has gained popularity for her sweet, slightly pampered, and creative personality, appearing in anime, games, and themed merchandise. </p>
       <a href="https://www.sanrio.com/collections/my-sweet-piano" class="btn btn-primary">See Profile</a>
     </div>
-    <img class="card-img-bottom" src="img/my sweet piano.webp" alt="Card image" style="width:120%">
+    <img class="card-img-bottom" src="img/my sweet piano.webp" alt="Card image" style="width:115%">
   </div>
 </div>
-  </body>
+
 </html>
